@@ -19,7 +19,7 @@ function toggleNav() {
     navLinks.style.display = isVisible ? 'none' : 'flex';
 }
 
-// Enhanced navbar background on scroll
+// Navbar background on scroll
 window.addEventListener('scroll', function() {
     const nav = document.querySelector('.nav');
     if (window.scrollY > 50) {
@@ -31,7 +31,7 @@ window.addEventListener('scroll', function() {
     }
 });
 
-// Enhanced animation on scroll with stagger effect
+// Animation on scroll with stagger effect
 const observerOptions = {
     threshold: 0.1,
     rootMargin: '0px 0px -50px 0px'
@@ -79,7 +79,7 @@ window.addEventListener('scroll', function() {
     });
 });
 
-// Enhanced skill tag interactions
+// Skill tag interactions
 document.querySelectorAll('.skill-tag').forEach(tag => {
     tag.addEventListener('mouseenter', function() {
         this.style.transform = 'scale(1.05)';
