@@ -4,48 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adya Sinha - Data Scientist & Software Developer</title>
-    <meta name="description" content="Portfolio of Adya Sinha - Microsoft Azure Certified Data Engineer, showcasing projects in data science, web development, and software engineering.">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Adya Sinha - Data Scientist, Software Developer & AI Enthusiast. Wellington Institute of Technology student passionate about turning data into insights and building innovative solutions.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="enhanced-styles.css">
 </head>
-<body class="dark">
+<body>
     <!-- Navigation -->
     <nav class="nav">
-        <div class="nav-container">
-            <div class="nav-brand">Adya Sinha</div>
+        <div class="container nav-container">
+            <div class="nav-brand">
+                <a href="#home">Adya Sinha</a>
+            </div>
             <div class="nav-links">
                 <a href="#home" class="nav-link">Home</a>
                 <a href="#about" class="nav-link">About</a>
+                <a href="#current-work" class="nav-link">Current Work</a>
                 <a href="#projects" class="nav-link">Projects</a>
                 <a href="#contact" class="nav-link">Contact</a>
             </div>
-            <button class="nav-toggle" onclick="toggleNav()">
+            <div class="nav-toggle" onclick="toggleNav()">
                 <span></span>
                 <span></span>
                 <span></span>
-            </button>
+            </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1 class="hero-title">
-                    Hi, I'm <span class="text-gradient">Adya Sinha</span>
-                </h1>
-                <p class="hero-subtitle">Data Scientist & Software Developer</p>
-                <p class="hero-description">
-                    Microsoft Azure Certified Data Engineer passionate about turning data into insights and building innovative solutions.
-                </p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">View Projects</a>
-                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">Hi, I'm Adya Sinha</h1>
+                    <h2 class="hero-subtitle">Data Scientist & Software Developer</h2>
+                    <p class="hero-description">
+                        Microsoft Azure Certified Data Engineer and AI enthusiast passionate about turning data into actionable insights and building innovative solutions. Currently pursuing my Bachelor of Information Technology in Data Science at Wellington Institute of Technology, I'm a detail-oriented problem solver with hands-on experience in cloud technologies, machine learning, and full-stack development.
+                        <br><br>
+                        <strong>Available for opportunities and eager to contribute to exciting projects that push the boundaries of technology and data science.</strong>
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
                 </div>
-            </div>
-            <div class="hero-image">
-                <img src="assets/profile-image.jpg" alt="Adya Sinha" class="profile-image">
+                <div class="hero-image">
+                    <div class="profile-image-container">
+                        <img src="https://via.placeholder.com/400x400/4a90e2/ffffff?text=AS" alt="Adya Sinha - Profile Photo" class="profile-image">
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -57,95 +63,168 @@
             <div class="about-content">
                 <div class="about-text">
                     <p>I'm a passionate Data Scientist and Software Developer with expertise in cloud technologies and data engineering. As a Microsoft Azure Certified Data Engineer, I specialize in building scalable data solutions and creating innovative applications.</p>
-                    <p>My journey combines analytical thinking with creative problem-solving, allowing me to bridge the gap between complex data insights and practical business solutions.</p>
                     
-                    <div class="certifications">
-                        <h3>Certifications</h3>
-                        <div class="cert-badge">
-                            <i class="fab fa-microsoft"></i>
-                            Microsoft Azure Data Engineer Associate
-                        </div>
-                    </div>
+                    <p>Currently in my final year at Wellington Institute of Technology pursuing a Bachelor of Information Technology in Data Science, I combine analytical thinking with creative problem-solving to bridge the gap between complex data insights and practical business solutions.</p>
+                    
+                    <p>My journey in technology is driven by curiosity and a genuine enthusiasm for artificial intelligence, machine learning, and the transformative power of data. I thrive on challenging projects that require innovative thinking and collaborative problem-solving.</p>
                 </div>
-                <div class="skills">
-                    <h3>Technical Skills</h3>
-                    <div class="skills-grid">
-                        <div class="skill-item">Python</div>
-                        <div class="skill-item">Azure</div>
-                        <div class="skill-item">SQL</div>
-                        <div class="skill-item">Machine Learning</div>
-                        <div class="skill-item">Data Engineering</div>
-                        <div class="skill-item">React</div>
-                        <div class="skill-item">JavaScript</div>
-                        <div class="skill-item">Power BI</div>
+                <div class="certifications">
+                    <h3>Certifications</h3>
+                    <div class="cert-item">
+                        <h4>Microsoft Azure Data Engineer Associate</h4>
+                        <p>November 2024</p>
+                    </div>
+                    <div class="cert-item">
+                        <h4>Deloitte Australia Data Analytics Job Simulation</h4>
+                        <p>May 2025</p>
+                    </div>
+                    <div class="cert-item">
+                        <h4>PwC US Technology Consulting Job Simulation</h4>
+                        <p>April 2025</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
+    <!-- Current Work Section -->
+    <section id="current-work" class="current-work">
+        <div class="container">
+            <h2 class="section-title">What I'm Currently Working On</h2>
+            
+            <!-- Skills Subsection -->
+            <div class="current-section">
+                <h3 class="subsection-title">Skills & Expertise</h3>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h4>Programming & Development</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">C#</span>
+                            <span class="skill-tag">HTML/CSS</span>
+                            <span class="skill-tag">ASP.NET Core</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h4>Data Science & Analytics</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Microsoft Azure</span>
+                            <span class="skill-tag">SQL</span>
+                            <span class="skill-tag">Power BI</span>
+                            <span class="skill-tag">RStudio</span>
+                            <span class="skill-tag">Jupyter</span>
+                            <span class="skill-tag">Data Mining</span>
+                            <span class="skill-tag">Machine Learning</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h4>Cloud & Tools</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Azure Data Factory</span>
+                            <span class="skill-tag">Synapse Analytics</span>
+                            <span class="skill-tag">Databricks</span>
+                            <span class="skill-tag">SSAS</span>
+                            <span class="skill-tag">Tableau</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h4>Project Management</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Agile</span>
+                            <span class="skill-tag">Scrum</span>
+                            <span class="skill-tag">Kanban</span>
+                            <span class="skill-tag">Jira</span>
+                            <span class="skill-tag">Trello</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Current Projects -->
+            <div class="current-section">
+                <h3 class="subsection-title">Active Projects</h3>
+                <div class="current-projects">
+                    <div class="project-highlight">
+                        <h4>AWTA - Capstone Group Project</h4>
+                        <p class="project-description">
+                            Leading development of an innovative application as part of my capstone project at Wellington Institute of Technology. 
+                            This collaborative effort showcases advanced software development practices, data integration, and user experience design.
+                            The project demonstrates my ability to work in cross-functional teams while delivering enterprise-level solutions.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Full-Stack Development</span>
+                            <span class="tech-tag">Team Collaboration</span>
+                            <span class="tech-tag">Agile Methodology</span>
+                            <span class="tech-tag">Data Integration</span>
+                        </div>
+                        <a href="https://github.com/capstone-awta/awta" class="project-link" target="_blank">
+                            View on GitHub →
+                        </a>
+                    </div>
+                    
+                    <div class="learning-focus">
+                        <h4>Current Learning Focus</h4>
+                        <ul>
+                            <li>Advanced Generative AI and RAG architectures</li>
+                            <li>Cloud-native data pipeline optimization</li>
+                            <li>Modern web development frameworks</li>
+                            <li>Enterprise software architecture patterns</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects Section -->
     <section id="projects" class="projects">
         <div class="container">
             <h2 class="section-title">Featured Projects</h2>
             <div class="projects-grid">
                 <div class="project-card">
-                    <div class="project-image">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3>Data Analytics Dashboard</h3>
-                        <p>Built a comprehensive analytics dashboard using Power BI and Azure services for real-time data visualization and insights.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Power BI</span>
-                            <span class="tech-tag">Azure</span>
-                            <span class="tech-tag">SQL</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/adyasinha-WIT" class="project-link">
-                                <i class="fab fa-github"></i> GitHub
-                            </a>
-                        </div>
+                    <h3>Generative AI Semantic Search</h3>
+                    <p>Developed a semantic search application using RAG architecture with Google Cloud SQL and Vertex AI, increasing query accuracy by 30% and reducing document retrieval time by 40%.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">RAG Architecture</span>
+                        <span class="tech-tag">Google Cloud SQL</span>
+                        <span class="tech-tag">Vertex AI</span>
+                        <span class="tech-tag">pgvector</span>
                     </div>
                 </div>
 
                 <div class="project-card">
-                    <div class="project-image">
-                        <i class="fas fa-robot"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3>Machine Learning Pipeline</h3>
-                        <p>Developed an end-to-end ML pipeline for predictive analytics using Python and Azure ML services.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">Azure ML</span>
-                            <span class="tech-tag">Scikit-learn</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/adyasinha-WIT" class="project-link">
-                                <i class="fab fa-github"></i> GitHub
-                            </a>
-                        </div>
+                    <h3>Interactive BI Dashboard</h3>
+                    <p>Built a comprehensive BI dashboard automating student attendance tracking with actionable insights for lecturers to improve engagement and academic performance.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Power BI</span>
+                        <span class="tech-tag">SQL Server</span>
+                        <span class="tech-tag">Data Visualization</span>
                     </div>
                 </div>
 
                 <div class="project-card">
-                    <div class="project-image">
-                        <i class="fas fa-globe"></i>
+                    <h3>Multidimensional Data Model</h3>
+                    <p>Created a business intelligence environment for World Wide Importers using multidimensional modeling, SSAS, MDX, and Power BI for effective decision-making.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">SSAS</span>
+                        <span class="tech-tag">MDX</span>
+                        <span class="tech-tag">Power BI</span>
+                        <span class="tech-tag">Data Mining</span>
                     </div>
-                    <div class="project-content">
-                        <h3>Web Application</h3>
-                        <p>Created a responsive web application with modern JavaScript frameworks and cloud deployment.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">React</span>
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">Azure</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/adyasinha-WIT" class="project-link">
-                                <i class="fab fa-github"></i> GitHub
-                            </a>
-                        </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Political Sentiment Analysis</h3>
+                    <p>Performed comprehensive data mining and sentiment analysis on 3000+ tweets from NZ political parties using advanced analytical techniques.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">RStudio</span>
+                        <span class="tech-tag">Pandas</span>
+                        <span class="tech-tag">Matplotlib</span>
+                        <span class="tech-tag">Sentiment Analysis</span>
                     </div>
                 </div>
             </div>
@@ -156,24 +235,20 @@
     <section id="contact" class="contact">
         <div class="container">
             <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <p>I'm always interested in hearing about new opportunities and interesting projects. Let's connect!</p>
-                    <div class="contact-links">
-                        <a href="https://github.com/adyasinha-WIT" class="contact-link">
-                            <i class="fab fa-github"></i>
-                            <span>GitHub</span>
-                        </a>
-                        <a href="https://www.linkedin.com/in/adyasinha25/" class="contact-link">
-                            <i class="fab fa-linkedin"></i>
-                            <span>LinkedIn</span>
-                        </a>
-                        <a href="mailto:1810adya@gmail.com" class="contact-link">
-                            <i class="fas fa-envelope"></i>
-                            <span>Email</span>
-                        </a>
-                    </div>
-                </div>
+            <p class="contact-description">
+                I'm always interested in hearing about new opportunities, exciting projects, and potential collaborations. 
+                Whether you have a challenging data problem to solve or an innovative idea to build, let's connect!
+            </p>
+            <div class="contact-links">
+                <a href="https://github.com/adyasinha-WIT" class="contact-link" target="_blank">
+                    GitHub
+                </a>
+                <a href="https://linkedin.com/in/adyasinha25" class="contact-link" target="_blank">
+                    LinkedIn
+                </a>
+                <a href="mailto:1810adya@gmail.com" class="contact-link">
+                    Email
+                </a>
             </div>
         </div>
     </section>
@@ -185,6 +260,6 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="enhanced-script.js"></script>
 </body>
 </html>
