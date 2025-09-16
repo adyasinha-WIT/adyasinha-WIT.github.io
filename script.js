@@ -176,7 +176,6 @@ function createGradientBackground() {
             const gradientY = mouseY * 100;
             
             hero.style.background = `
-                radial-gradient(circle at ${gradientX}% ${gradientY}%, 
                 hsl(220 70% 95% / 0.8) 0%, 
                 hsl(220 20% 98% / 0.4) 50%, 
                 hsl(var(--background)) 100%)
