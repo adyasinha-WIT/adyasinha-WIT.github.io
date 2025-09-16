@@ -31,7 +31,7 @@
     
     /* Enhanced Design Tokens */
     --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(220 70% 60%));
-    --gradient-hero: linear-gradient(135deg, hsl(var(--background)), hsl(220 20% 98%));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--background)), hwb(251 5% 71%));
     --shadow-elegant: 0 10px 30px -10px hsl(var(--primary) / 0.2);
     --shadow-card: 0 4px 20px -2px hsl(220 20% 20% / 0.1);
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
