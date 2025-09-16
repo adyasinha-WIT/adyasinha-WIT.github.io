@@ -1,63 +1,42 @@
-:root {
-    /* Primary Brand Colors - Professional Blue Theme */
-    --primary: 220 70% 50%;
-    --primary-foreground: 220 10% 98%;
-    --primary-hover: 220 70% 45%;
+root {
+    /* Dark Violet Professional Theme */
+    --primary: 260 90% 60%;
+    --primary-foreground: 260 10% 98%;
+    --primary-hover: 260 90% 55%;
     
     /* Secondary Colors */
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 260 20% 25%;
+    --secondary-foreground: 260 10% 95%;
     
     /* Accent Colors */
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 280 70% 70%;
+    --accent-foreground: 260 10% 98%;
     
     /* Status Colors */
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --destructive-foreground: 260 10% 98%;
+    --muted: 260 15% 30%;
+    --muted-foreground: 260 10% 75%;
     
     /* UI Elements */
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 220 70% 50%;
-    --background: 0 0% 100%;
-    --foreground: 220.9 39.3% 11%;
-    --card: 0 0% 100%;
-    --card-foreground: 220.9 39.3% 11%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 220.9 39.3% 11%;
+    --border: 260 20% 35%;
+    --input: 260 20% 25%;
+    --ring: 260 90% 60%;
+    --background: 260 25% 15%;
+    --foreground: 260 10% 95%;
+    --card: 260 20% 18%;
+    --card-foreground: 260 10% 95%;
+    --popover: 260 20% 18%;
+    --popover-foreground: 260 10% 95%;
     
     /* Enhanced Design Tokens */
-    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(220 70% 60%));
-    --gradient-hero: linear-gradient(135deg, hsl(var(--background)), hwb(251 5% 71%));
-    --shadow-elegant: 0 10px 30px -10px hsl(var(--primary) / 0.2);
-    --shadow-card: 0 4px 20px -2px hsl(220 20% 20% / 0.1);
-    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --gradient-primary: linear-gradient(135deg, hsl(260 90% 60%), hsl(280 80% 70%));
+    --gradient-hero: linear-gradient(135deg, hsl(260 25% 15%), hsl(270 30% 18%));
+    --gradient-card: linear-gradient(145deg, hsl(260 20% 18%), hsl(270 25% 20%));
+    --shadow-elegant: 0 10px 30px -10px hsl(260 90% 20% / 0.4);
+    --shadow-card: 0 4px 20px -2px hsl(260 50% 10% / 0.3);
+    --transition-smooth: all 0.2s ease;
     --border-radius: 0.75rem;
-}
-
-.dark {
-    --primary: 220 70% 50%;
-    --primary-foreground: 220 10% 98%;
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 20% 98%;
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 20% 98%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 20% 98%;
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 220 70% 50%;
-    --background: 224 71.4% 4.1%;
-    --foreground: 210 20% 98%;
-    --card: 224 71.4% 4.1%;
-    --card-foreground: 210 20% 98%;
-    --popover: 224 71.4% 4.1%;
-    --popover-foreground: 210 20% 98%;
 }
 
 /* Reset and Base Styles */
@@ -73,6 +52,7 @@ body {
     color: hsl(var(--foreground));
     line-height: 1.6;
     scroll-behavior: smooth;
+    font-weight: 500;
 }
 
 .container {
@@ -122,7 +102,7 @@ body {
 .nav-link {
     color: hsl(var(--foreground));
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 600;
     transition: var(--transition-smooth);
     position: relative;
 }
@@ -180,7 +160,7 @@ body {
 
 .hero-title {
     font-size: 3.5rem;
-    font-weight: 700;
+    font-weight: 800;
     margin-bottom: 0.5rem;
     background: var(--gradient-primary);
     -webkit-background-clip: text;
@@ -191,7 +171,7 @@ body {
 
 .hero-subtitle {
     font-size: 1.8rem;
-    font-weight: 500;
+    font-weight: 700;
     color: hsl(var(--primary));
     margin-bottom: 1.5rem;
 }
@@ -201,6 +181,12 @@ body {
     color: hsl(var(--muted-foreground));
     margin-bottom: 2.5rem;
     line-height: 1.7;
+    font-weight: 500;
+}
+
+.hero-description strong {
+    color: hsl(var(--foreground));
+    font-weight: 700;
 }
 
 .hero-buttons {
@@ -209,7 +195,7 @@ body {
     align-items: center;
 }
 
-/* Profile Image */
+/* Profile Image - Minimal Animation */
 .profile-image-container {
     position: relative;
     width: 350px;
@@ -227,9 +213,9 @@ body {
     transition: var(--transition-smooth);
 }
 
+/* Removed hover animation as requested */
 .profile-image:hover {
-    transform: scale(1.05);
-    box-shadow: 0 20px 40px -10px hsl(var(--primary) / 0.3);
+    box-shadow: 0 15px 35px -5px hsl(var(--primary) / 0.5);
 }
 
 /* Button Styles */
@@ -237,7 +223,7 @@ body {
     padding: 0.875rem 2rem;
     border-radius: var(--border-radius);
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 1rem;
     transition: var(--transition-smooth);
     display: inline-flex;
@@ -254,8 +240,8 @@ body {
 }
 
 .btn-primary:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 15px 35px -5px hsl(var(--primary) / 0.4);
+    box-shadow: 0 15px 35px -5px hsl(var(--primary) / 0.6);
+    opacity: 0.9;
 }
 
 .btn-secondary {
@@ -267,13 +253,12 @@ body {
 .btn-secondary:hover {
     background: hsl(var(--primary));
     color: hsl(var(--primary-foreground));
-    transform: translateY(-2px);
 }
 
 /* Section Styles */
 .section-title {
     font-size: 2.5rem;
-    font-weight: 700;
+    font-weight: 800;
     text-align: center;
     margin-bottom: 3rem;
     color: hsl(var(--foreground));
@@ -310,10 +295,11 @@ body {
     font-size: 1.1rem;
     color: hsl(var(--muted-foreground));
     line-height: 1.8;
+    font-weight: 500;
 }
 
 .certifications {
-    background: hsl(var(--card));
+    background: var(--gradient-card);
     padding: 2rem;
     border-radius: var(--border-radius);
     box-shadow: var(--shadow-card);
@@ -324,6 +310,7 @@ body {
     color: hsl(var(--primary));
     margin-bottom: 1.5rem;
     font-size: 1.3rem;
+    font-weight: 700;
 }
 
 .cert-item {
@@ -338,7 +325,7 @@ body {
 }
 
 .cert-item h4 {
-    font-weight: 600;
+    font-weight: 700;
     color: hsl(var(--foreground));
     margin-bottom: 0.25rem;
 }
@@ -346,6 +333,7 @@ body {
 .cert-item p {
     color: hsl(var(--muted-foreground));
     font-size: 0.9rem;
+    font-weight: 500;
 }
 
 /* Current Work Section */
@@ -360,7 +348,7 @@ body {
 
 .subsection-title {
     font-size: 2rem;
-    font-weight: 600;
+    font-weight: 700;
     color: hsl(var(--primary));
     margin-bottom: 2rem;
     text-align: center;
@@ -375,7 +363,7 @@ body {
 }
 
 .skill-category {
-    background: hsl(var(--card));
+    background: var(--gradient-card);
     padding: 2rem;
     border-radius: var(--border-radius);
     box-shadow: var(--shadow-card);
@@ -383,16 +371,16 @@ body {
     transition: var(--transition-smooth);
 }
 
+/* Reduced animation */
 .skill-category:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 30px -5px hsl(var(--primary) / 0.2);
+    box-shadow: 0 8px 25px -5px hsl(var(--primary) / 0.3);
 }
 
 .skill-category h4 {
     color: hsl(var(--primary));
     margin-bottom: 1rem;
     font-size: 1.1rem;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .skill-tags {
@@ -407,7 +395,7 @@ body {
     padding: 0.375rem 0.875rem;
     border-radius: 1.5rem;
     font-size: 0.875rem;
-    font-weight: 500;
+    font-weight: 600;
     transition: var(--transition-smooth);
 }
 
@@ -425,7 +413,7 @@ body {
 }
 
 .project-highlight {
-    background: hsl(var(--card));
+    background: var(--gradient-card);
     padding: 2.5rem;
     border-radius: var(--border-radius);
     box-shadow: var(--shadow-card);
@@ -433,14 +421,15 @@ body {
     transition: var(--transition-smooth);
 }
 
+/* Reduced animation */
 .project-highlight:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 40px -5px hsl(var(--primary) / 0.2);
+    box-shadow: 0 12px 35px -5px hsl(var(--primary) / 0.3);
 }
 
 .project-highlight h4 {
     color: hsl(var(--primary));
     font-size: 1.3rem;
+    font-weight: 700;
     margin-bottom: 1rem;
 }
 
@@ -448,6 +437,7 @@ body {
     color: hsl(var(--muted-foreground));
     line-height: 1.7;
     margin-bottom: 1.5rem;
+    font-weight: 500;
 }
 
 .project-tech {
@@ -463,13 +453,13 @@ body {
     padding: 0.25rem 0.75rem;
     border-radius: 1rem;
     font-size: 0.85rem;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .project-link {
     color: hsl(var(--primary));
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 700;
     transition: var(--transition-smooth);
 }
 
@@ -478,7 +468,7 @@ body {
 }
 
 .learning-focus {
-    background: hsl(var(--card));
+    background: var(--gradient-card);
     padding: 2rem;
     border-radius: var(--border-radius);
     box-shadow: var(--shadow-card);
@@ -489,6 +479,7 @@ body {
     color: hsl(var(--primary));
     margin-bottom: 1rem;
     font-size: 1.2rem;
+    font-weight: 700;
 }
 
 .learning-focus ul {
@@ -501,6 +492,7 @@ body {
     color: hsl(var(--muted-foreground));
     position: relative;
     padding-left: 1.5rem;
+    font-weight: 500;
 }
 
 .learning-focus li:before {
@@ -525,7 +517,7 @@ body {
 }
 
 .project-card {
-    background: hsl(var(--card));
+    background: var(--gradient-card);
     padding: 2rem;
     border-radius: var(--border-radius);
     box-shadow: var(--shadow-card);
@@ -533,21 +525,23 @@ body {
     transition: var(--transition-smooth);
 }
 
+/* Reduced animation */
 .project-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 20px 40px -10px hsl(var(--primary) / 0.25);
+    box-shadow: 0 8px 25px -5px hsl(var(--primary) / 0.3);
 }
 
 .project-card h3 {
     color: hsl(var(--primary));
     margin-bottom: 1rem;
     font-size: 1.2rem;
+    font-weight: 700;
 }
 
 .project-card p {
     color: hsl(var(--muted-foreground));
+    line-height: 1.7;
     margin-bottom: 1.5rem;
-    line-height: 1.6;
+    font-weight: 500;
 }
 
 /* Contact Section */
@@ -561,10 +555,11 @@ body {
     font-size: 1.1rem;
     color: hsl(var(--muted-foreground));
     margin-bottom: 3rem;
-    line-height: 1.7;
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+    line-height: 1.7;
+    font-weight: 500;
 }
 
 .contact-links {
@@ -577,51 +572,38 @@ body {
 .contact-link {
     display: inline-flex;
     align-items: center;
-    gap: 0.5rem;
-    color: hsl(var(--primary));
+    padding: 0.875rem 2rem;
+    background: var(--gradient-primary);
+    color: hsl(var(--primary-foreground));
     text-decoration: none;
-    font-weight: 600;
-    font-size: 1.1rem;
-    padding: 1rem 2rem;
-    border: 2px solid hsl(var(--primary));
     border-radius: var(--border-radius);
+    font-weight: 700;
     transition: var(--transition-smooth);
+    box-shadow: var(--shadow-elegant);
 }
 
 .contact-link:hover {
-    background: hsl(var(--primary));
-    color: hsl(var(--primary-foreground));
-    transform: translateY(-3px);
-    box-shadow: var(--shadow-elegant);
+    box-shadow: 0 15px 35px -5px hsl(var(--primary) / 0.6);
+    opacity: 0.9;
 }
 
 /* Footer */
 .footer {
+    background: hsl(var(--background));
     padding: 2rem 0;
-    background: hsl(var(--card));
     border-top: 1px solid hsl(var(--border));
     text-align: center;
 }
 
 .footer p {
     color: hsl(var(--muted-foreground));
-    font-size: 0.9rem;
+    font-weight: 500;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
     .nav-links {
         display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background: hsl(var(--background));
-        border: 1px solid hsl(var(--border));
-        border-radius: 0 0 var(--border-radius) var(--border-radius);
-        padding: 1rem;
-        gap: 1rem;
     }
     
     .nav-toggle {
@@ -636,6 +618,10 @@ body {
     
     .hero-title {
         font-size: 2.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.5rem;
     }
     
     .profile-image-container {
@@ -653,7 +639,7 @@ body {
         gap: 2rem;
     }
     
-    .projects-grid {
+    .skills-grid {
         grid-template-columns: 1fr;
     }
     
@@ -667,8 +653,31 @@ body {
         align-items: center;
         gap: 1rem;
     }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 0.5rem;
+    }
     
-    .skills-grid {
-        grid-template-columns: 1fr;
+    .hero {
+        padding: 6rem 0 3rem;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .profile-image-container {
+        width: 220px;
+        height: 220px;
     }
 }
