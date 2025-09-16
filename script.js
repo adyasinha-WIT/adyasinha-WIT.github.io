@@ -166,10 +166,7 @@ function createGradientBackground() {
     const hero = document.querySelector('.hero');
     if (hero) {
         hero.style.background = `
-            radial-gradient(circle at 50% 50%, 
-            hsl(220 70% 95% / 0.8) 0%, 
-            hsl(220 20% 98% / 0.4) 50%, 
-            hsl(var(--background)) 100%)
+        linear-gradient(135deg, hsl(260 25% 15%), hsla(268, 30%, 18%, 1.00), hsla(268, 35%, 20%, 1.00))
         `;
     }
 }
